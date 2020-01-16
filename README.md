@@ -26,7 +26,7 @@ https://colab.research.google.com/github/davidcpage/cifar10-fast/blob/master/bag
 - nzip -d ./match/qzg_cifar10-2.0 ./match/test.zip 
 - cd ./match/qzg_cifar10-2.0 && python train.py）
 
-**重要说明：**神经网络具有不确定性我们不能保证每次结果都能达到92.97的准确率，参考顺序：csv结果文件>已有的模型文件>重新训练并验证。
+**重要说明：** 神经网络具有不确定性我们不能保证每次结果都能达到92.97的准确率，参考顺序：csv结果文件>已有的模型文件>重新训练并验证。
 
 ### 2.1colab验证
 
