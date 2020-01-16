@@ -20,7 +20,11 @@ https://colab.research.google.com/github/davidcpage/cifar10-fast/blob/master/bag
 
 建议使用colab进行训练验证，本文将表述两个方法一个为colab，一个是本地验证。
 
-本地验证：将train、test文件夹放在根目录，然后运行train.py即可运行。
+本地验证：将train、test文件夹放在根目录，然后运行train.py即可运行。（如果你在linux环境下直接打开终端分别运行四条命令即可：
+- git clone https://github.com/Qzgfather/match.git
+- unzip -d ./match/qzg_cifar10-2.0 ./match/train.zip 
+- nzip -d ./match/qzg_cifar10-2.0 ./match/test.zip 
+- cd ./match/qzg_cifar10-2.0 && python train.py）
 
 **重要说明：**神经网络具有不确定性我们不能保证每次结果都能达到92.97的准确率，参考顺序：csv结果文件>已有的模型文件>重新训练并验证。
 
