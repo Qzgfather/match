@@ -1,18 +1,21 @@
-# 代码说明
-本文对代码的使用，以及如何复现做出详细说明，方便进一步进行验证。
-## 提供的内容：
-- 源码
-- 训练模型
-- 数据
+# 参赛代码补充说明：2020年1月27日
 
-## 源码
-本模型使用resnet模型，对任务进行处理，采取了，裁剪等必要的数据处理方案，在提供的测试集92%+的准确率,请看logs.tsv，需要的库：
-- pytorch > 1.3.1
-- pillow > 6.2.1
-- numpy > 1.18.0
+我们复现代码并未发现截图中的错误，我们怀疑是pytorch库以及其他库版本问题，我们建议使用第三方库的版本为：
 
-## How to run?
-如果你想重新训练，请直接运行python train.py记得cd到train.py所在的目录。
-如果想进行预测操作，请使用下方的预测说明
+**numpy==1.17.0**
+
+**opencv-python==4.1.2.30**
+
+**pandas==0.25.3**
+
+**torch==1.1.0(GPU)**
+
+**torchvision==0.1.6**
+
+**tqdm==4.42.0**
+
+请使用GTX1080ti及其以上GPU，以获得良好体验，我们的运行情况：
+
+![train](https://raw.githubusercontent.com/Qzgfather/match/master/train_screenshot.png)
 
 
