@@ -13,9 +13,9 @@ def main():
 
     print('处理数据，导入数据！')
     dataset = mydata.get_data()
-    epochs = 24
+    epochs = 64
     lr_schedule = PiecewiseLinear([0, 5, epochs], [0, 0.4, 0])
-    batch_size = 512
+    batch_size = 64
     train_transforms = [Crop(32, 32), FlipLR(), Cutout(8, 8)]
 
     model = Network(net()).to(device).half()

@@ -34,7 +34,7 @@ def net(channels=None, weight=0.125, pool=nn.MaxPool2d(2), extra_layers=(), res_
         'layer3': conv_bn(channels['layer2'], channels['layer3'], pool=pool),
         'pool': nn.MaxPool2d(4),
         'flatten': Flatten(),
-        'linear': nn.Linear(channels['layer3'], 9, bias=False),
+        'linear': nn.Linear(channels['layer3'], 10, bias=False),
         'logits': Mul(weight),
     }
     for layer in res_layers:

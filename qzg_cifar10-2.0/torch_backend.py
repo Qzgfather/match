@@ -4,6 +4,7 @@ from torch import nn
 from core import *
 from collections import namedtuple 
 from itertools import count
+import torch.utils.data
 
 torch.backends.cudnn.benchmark = True
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
